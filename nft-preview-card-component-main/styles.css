@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+- Font-size (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing systems (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.1;
+  background-color:hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  color: hsl(215, 51%, 70%);
+  font-size: 1.8rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+ width: 45rem;
+ margin: 0 auto;
+ background-color: hsl(216, 50%, 16%);
+ position: relative;
+}
+
+.box-image {
+  position: relative;
+  background-image: url('/images/image-equilibrium.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  margin: 2rem;
+  transition: all 4s;
+  overflow: hidden;
+}
+
+.icon-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 100%;
+  background-color: hsl(178, 100%, 50%, .5);
+}
+.icon-view:hover {
+  opacity: 1;
+}
+
+.box-content {
+  padding: 0 2.6rem;
+}
+
+.heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.price-eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 700;
+}
+
+.creator-info img {
+  width: 10%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.creator-info span {
+  cursor: pointer;
+  color: #fff;
+}
+
+.creator-info {
+  border-top: 2px solid hsl(215, 32%, 27%);
+  padding: 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.border {
+  border-radius: 13px;
+}
+
+.name:hover, .heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 4.4rem 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
